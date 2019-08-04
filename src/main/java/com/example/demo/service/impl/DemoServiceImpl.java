@@ -13,6 +13,7 @@ import java.util.Date;
 public class DemoServiceImpl implements DemoService {
     @Override
     public String sayHello(String user) {
+        System.out.println("有请求进来了！" + user);
         return user + ":hello" + "(" + new Date() + ")";
     }
 }
